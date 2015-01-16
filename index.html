@@ -1,0 +1,15 @@
+---
+title: Slate
+description: A minimal blog theme for Jekyll
+---
+
+{% include head.html %}
+{% include header.html %}
+
+<section class="posts">
+    {% for post in site.posts %}
+        {% include post.html %}
+    {% endfor %}
+</section>
+
+{% include footer.html %}

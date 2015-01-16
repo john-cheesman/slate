@@ -1,0 +1,25 @@
+{
+  "name": "slate",
+  "version": "0.0.0",
+  "description": "A minimal blog theme for Jekyll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/john-cheesman/slate.git"
+  },
+  "keywords": [
+    "jekyll",
+    "monotone",
+    "blog",
+    "minimal"
+  ],
+  "author": "John Cheesman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/john-cheesman/slate/issues"
+  },
+  "homepage": "https://github.com/john-cheesman/slate"
+}

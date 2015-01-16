@@ -1,0 +1,16 @@
+{% include head.html %}
+{% include header.html %}
+
+<section>
+    {% if page.image %}
+        <img class="post-image" src="/images/{{ page.image }}" alt="{{ page.alt }}" />
+    {% endif %}
+
+    <h1>{{ page.title }}</h1>
+
+    <article class="post-content">
+        {{ content }}
+    </article>
+</section>
+
+{% include footer.html %}
