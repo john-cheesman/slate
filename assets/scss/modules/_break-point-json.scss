@@ -1,0 +1,7 @@
+//
+// Break Point JSON Function
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+@function bp-json($label, $label_list) {
+    @return '{ "current" : "#{$label}", "all" : "[#{$label_list}]" }';
+}

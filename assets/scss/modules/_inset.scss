@@ -1,0 +1,23 @@
+//
+// Inset Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Inset an element in a body of text
+//     $position: Either before or after
+//     $spacing:  The margin around the inset element
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin inset($position, $spacing: $spacing-unit) {
+    display: block;
+
+    @if $position == before {
+        @include rem(margin, 0 $spacing $spacing 0);
+
+        float: left;
+    }
+
+    @else if $position == after {
+        @include rem(margin, 0 0 $spacing $spacing);
+
+        float: right;
+    }
+}

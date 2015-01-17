@@ -1,7 +1,23 @@
-body {
-    font-family: Vollkorn, Times, 'Times New Roman', serif;
-}
+//
+// Stylesheet
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-}
+// Global
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@import 'base';
+@import 'partials/scaffolding';
+@import 'partials/links';
+@import 'partials/figure';
+@import 'partials/break-point-labels';
+@import 'partials/icon';
+@import 'partials/replacement-text';
+
+// Sections
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@import 'sections/primary-header';
+@import 'sections/primary-navigation';
+@import 'sections/primary-footer';
+@import 'sections/content';
+@import 'sections/page-header';
+@import 'sections/lede';
+@import 'sections/menu-button';

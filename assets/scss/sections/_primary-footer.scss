@@ -1,0 +1,14 @@
+//
+// Primary Footer
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+.primary-footer {
+    @include rem(font-size, $epsilon);
+    @include rem(padding, $spacing-unit 0);
+
+    background-color: palette(white);
+
+    .copyright {
+        margin: 0;
+    }
+}

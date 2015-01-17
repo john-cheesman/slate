@@ -1,0 +1,19 @@
+//
+// Figure
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+figure {
+    @include rem(padding, ($spacing-unit / 2));
+
+    border: 2px solid palette(grey);
+
+    img {
+        @include rem(margin, 0 0 ($spacing-unit / 2) 0);
+
+        display: block;
+    }
+}
+
+figcaption {
+    @include rem(font-size, $epsilon);
+}

@@ -1,0 +1,15 @@
+//
+// Lede
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+.lede {
+    @include rem(padding, ($spacing-unit * 2) 0);
+    @include rem(font-size, $beta);
+
+    color: palette(blue, dark);
+    text-align: center;
+
+    p:last-child {
+        margin: 0;
+    }
+}

@@ -1,15 +1,54 @@
----
-title: Slate
-description: A minimal blog theme for Jekyll
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Slate - A minimal typographic framework</title>
+        <meta name="viewport" content="width=device-width, initial-zoom=1" />
 
-{% include head.html %}
-{% include header.html %}
+        <link href="http://fonts.googleapis.com/css?family=Vollkorn:400,400italic" rel="stylesheet" />
+        <link href="http://fonts.googleapis.com/css?family=Lora:400,400italic, 700" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet" />
+    </head>
 
-<section class="posts">
-    {% for post in site.posts %}
-        {% include post.html %}
-    {% endfor %}
-</section>
+    <body>
+        <header class="primary-header">
+            <h1>Slate</h1>
+            <p class="tagline">A minimal typographic framework, ideal for essays and articles.</p>
+        </header>
 
-{% include footer.html %}
+        <nav class="contents">
+            <ul>
+                <li><a href="#lede">Lede</a></li>
+                <li><a href="#paragraphs">Paragraphs</a></li>
+                <li><a href="#block-quotes">Block Quotes</a></li>
+                <li><a href="#pull-quotes">Pull Quotes</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+
+            <h2 id="lede">Lede</h2>
+
+            <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus bibendum ipsum, eu sagittis magna semper eget. Vestibulum sapien nisi, bibendum eu leo eu, pretium sodales sem. Suspendisse potenti. Morbi lobortis pulvinar libero, eget semper risus finibus quis. Aliquam erat volutpat. Phasellus congue enim at urna tristique, ullamcorper gravida magna porta. Donec nulla lectus, laoreet nec iaculis sed, maximus at ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <h2 id="paragraphs">Paragraphs</h2>
+
+            <p>Suspendisse a bibendum urna. Nam bibendum libero mauris, sit amet tempus sem pulvinar nec. Nulla sit amet fringilla metus, a aliquam dolor. Nunc ut rutrum urna. Quisque posuere tempor sem, sed venenatis lectus. Aliquam congue ipsum lorem, aliquet gravida risus aliquam sit amet. Sed efficitur imperdiet orci nec ullamcorper. Praesent in maximus libero. Integer faucibus nisi in metus sagittis, a tincidunt leo vehicula. Aliquam in sodales justo. In a consequat tellus, a tempus mi. Sed suscipit turpis tortor, sed laoreet velit sagittis et. Praesent at metus pharetra, malesuada magna rhoncus, egestas metus. Sed commodo ante felis, non tempus tellus congue in.</p>
+
+            <p>Mauris vestibulum eleifend augue a lacinia. Quisque metus eros, placerat a tristique sit amet, vehicula et massa. Donec elementum nisi ut tortor lacinia, quis malesuada ipsum consectetur. Pellentesque porta turpis at lorem sollicitudin, a sagittis orci iaculis. Morbi non ligula congue, molestie justo eget, semper tellus. Sed fermentum justo non lectus porttitor, vitae sodales sem laoreet. Maecenas eu quam non ex pulvinar tempor a ut magna.</p>
+
+            <h2 id="block-quotes">Block Quotes</h2>
+
+            <blockquote>
+                <p>Curabitur vel sem orci. Phasellus sed est vulputate, consequat neque id, congue urna. In vitae dignissim neque. Aenean malesuada risus ante, sit amet ornare ligula fringilla a. Duis porta nulla in lorem scelerisque viverra. Sed quis velit justo. Quisque molestie tempor nulla, nec sagittis ante bibendum non. Praesent in sapien ac leo tempus laoreet. Suspendisse sit amet arcu vestibulum, vulputate quam at, sagittis sapien. Maecenas quis nunc vel nunc faucibus fermentum vel eget lacus. Mauris dictum ipsum lorem. Nunc sed risus eu sem maximus vulputate. Suspendisse vitae risus non elit viverra tempus. Vivamus diam odio, congue eget lectus et, finibus iaculis enim. Nulla egestas facilisis dui, a scelerisque massa auctor et.</p>
+            </blockquote>
+
+            <h2 id="pull-quotes">Pull Quotes</h2>
+
+            <aside class="pull-quote">
+                <p>Aliquam sit amet malesuada eros. Mauris gravida in sapien eu luctus. Sed ullamcorper ante sed auctor tempus. Maecenas porta vitae diam quis commodo. Sed euismod mauris ac metus faucibus ultricies. Quisque quis lectus a turpis facilisis ornare. Aliquam et nunc ut enim imperdiet finibus. Mauris venenatis quam pharetra tempus accumsan. Duis quis diam ut mi ullamcorper cursus at ut mi. Nullam volutpat magna quam, nec ullamcorper nulla auctor in. Suspendisse vel maximus justo. Curabitur eget neque at dui placerat faucibus ac in erat. Ut scelerisque leo nec enim fringilla egestas non et ligula.</p>
+            </aside>
+        </article>
+    </body>
+</html>

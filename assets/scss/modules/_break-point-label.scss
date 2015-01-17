@@ -1,0 +1,18 @@
+//
+// Break Point Label Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Generate break point label styles for a given point
+//     $label:      name of the break point
+//     $label_list: an array of all the break points
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin bp-label($label, $label_list) {
+    body:before {
+        display: none;
+        content: bp-json($label, $label_list);
+    }
+
+    .lt-ie9 head {
+        font-family: bp-json($label, $label_list);
+    }
+}

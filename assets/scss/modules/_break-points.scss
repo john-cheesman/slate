@@ -1,0 +1,21 @@
+//
+// Break Points Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Creates a media query for the chosen break point
+//     $point:     name of the break point
+//     $set_label: boolean, enables break point label styles
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin bp($point, $set_label: false) {
+    @for $i from 1 through length($label_list) {
+        @if $point == nth($label_list, $i) {
+            @media #{nth($point_list, $i)} {
+                @if $set_label {
+                    @include bp-label($point, $label_list);
+                }
+
+                @content;
+            }
+        }
+    }
+}

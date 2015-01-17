@@ -1,0 +1,24 @@
+//
+// Primary Header
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+.primary-header {
+    position: relative;
+    padding: 0 0 $spacing-unit 0;
+    background-color: palette(white);
+    text-align: center;
+}
+
+.primary-header-container {
+    @include container;
+}
+
+.branding {
+    @include heading(kilo);
+}
+
+.tagline {
+    margin: 0;
+    font-family: $header-font-family;
+    font-style: italic;
+}

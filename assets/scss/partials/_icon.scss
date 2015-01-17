@@ -1,0 +1,19 @@
+//
+// Icon
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+[class^="icon-"], [class*=" icon-"] {
+    @include rem(height, 16px);
+    @include rem(width, 16px);
+
+    display: inline-block;
+    vertical-align: middle;
+    color: palette(grey, dark);
+    fill: currentColor;
+}
+
+.icon-navicon {
+    width: 20px;
+    height: 20px;
+    fill: palette(white);
+}

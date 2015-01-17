@@ -1,0 +1,11 @@
+//
+// Content
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+.content {
+    @include container;
+    @include clearfix;
+    @include rem(margin, $spacing-unit auto);
+
+    background-color: palette(white);
+}

@@ -1,0 +1,69 @@
+//
+// Base
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Variables
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Palette
+$palettes: (
+    white: (
+        medium: rgb(255,255,255)
+    ),
+    grey: (
+        light: rgb(245, 245, 245),
+        medium: rgb(229, 229, 229),
+        dark: rgb(85, 85, 85)
+    ),
+    blue: (
+        light: rgb(172,212,255),
+        medium: rgb(78,140,235),
+        dark: rgb(57,88,127)
+    )
+) !default;
+
+// Font families
+$base-font-family:           Lora, serif !default;
+$header-font-family:         Vollkorn, serif !default;
+
+// Dimensions
+$baseline-px:                16px !default;
+$spacing-unit:               24px !default;
+$container-width:            50em !default;
+$container-padding:          0 $spacing-unit !default;
+$figcaption-padding:         ($spacing-unit / 2) !default;
+$divider-width:              6px !default;
+$divider-style:              double !default;
+$product-image-width:        (364/752)*100% !default;
+$horizontal-rule-margin:     0 0 $spacing-unit 0 !default;
+$commercial-figure-width:    (364/752)*100% !default;
+$about-image-width:          (364/752)*100% !default;
+$about-image-margin:         0 0 $spacing-unit 0 !default;
+$product-padding:            0 0 $spacing-unit 0 !default;
+$our-service-padding:        0 0 $spacing-unit 0 !default;
+$contact-information-margin: 0 0 $spacing-unit 0 !default;
+$contact-form-margin:        0 0 $spacing-unit 0 !default;
+$contact-form-height:        465px !default;
+$contact-methods-width:      1/2 !default;
+$business-address-width:     1/2 !default;
+
+// Headings
+// Major third @16px
+$giga:                       76px !default;
+$mega:                       61px !default;
+$kilo:                       49px !default;
+$alpha:                      31px !default;
+$beta:                       25px !default;
+$gamma:                      20px !default;
+$delta:                      16px !default;
+$epsilon:                    13px !default;
+$zeta:                       10px !default;
+
+// Break Points
+$label_list:                 'small', 'sub-medium', 'medium', 'large' !default;
+$point_list:                 '(min-width: 0)', '(min-width: 537px)', '(min-width: 800px)', '(min-width: 1000px)' !default;
+
+// Import normalize and modules
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@import 'vendor/normalize';
+@import 'modules/all';

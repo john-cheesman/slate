@@ -1,3 +1,13 @@
 # Slate
 
-A minimal blog theme for Jekyll
+A minimal typographic framework.
+
+## Setup
+
+```
+$ npm install
+```
+
+```
+$ gulp
+```

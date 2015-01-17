@@ -1,9 +1,0 @@
-<article class="post">
-    {% if post.image %}
-        <img class="post-image" src="/images/{{ post.image }}" alt="{{ post.alt }}" />
-    {% endif %}
-
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-
-    <p>{{ post.description }}</p>
-</article>

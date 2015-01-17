@@ -1,0 +1,27 @@
+//
+// Menu Button
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+.menu-button {
+    @include inline-block;
+    @include rem(padding, 5px 5px 6px 6px);
+
+    position: absolute;
+    width: ($spacing-unit * 1.5);
+    height: ($spacing-unit * 1.5);
+    top: 16px;
+    left: -10px;
+    border: none;
+    background: palette(blue);
+    color: palette(white);
+    transition: left 0.1s linear;
+
+    @include bp(medium) {
+        display: none;
+    }
+
+    &:hover, &:focus {
+        background-color: palette(blue, dark);
+        left: 0;
+    }
+}
